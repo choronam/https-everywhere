@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "William Budington",
   "license": "GPL-3.0",
@@ -15,6 +17,8 @@
     "progress": "^1.1.8",
     "request": "^2.74.0",
     "unzip": "^0.1.11",
-    "xml2js": "^0.4.17"
-  }
+    "xml2js": "^0.4.17",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
