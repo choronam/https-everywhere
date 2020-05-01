@@ -12,7 +12,9 @@
   "scripts": {
     "lint": "eslint index.js test lib",
     "start": "probot run ./index.js",
-    "test": "npm run lint && nyc perjury test/*-test.js"
+    "test": "npm run lint && nyc perjury test/*-test.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "bugs": {
     "url": "https://github.com/EFForg/HTTPS-Everywhere/issues"
@@ -37,6 +39,8 @@
     "remark": "^9.0.0",
     "request": "^2.83.0",
     "strip-markdown": "^3.0.1",
-    "unzip": "^0.1.11"
-  }
+    "unzip": "^0.1.11",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
