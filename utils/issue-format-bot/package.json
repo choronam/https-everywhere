@@ -35,7 +35,7 @@
     "lodash": "^4.17.5",
     "probot": "^6.1.0",
     "remark": "^9.0.0",
-    "request": "^2.83.0",
+    "request": "^2.88.2",
     "strip-markdown": "^3.0.1",
     "unzip": "^0.1.11"
   }
